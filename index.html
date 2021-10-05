@@ -17,39 +17,28 @@
     <br>
     <br>
         <button type="button" onclick="alert('Hellow World')">click me here!</button> 
-    </body>
+   
   <br>
-<h1>Ordered Lists</h1> 
-<ol>
-    <li value="1">States</li>
-    <li>Union Teritiries</li> 
-    <li>Citizenship</li>
-    <li>Fundamental Rights</li>
-    <li>DPSP</li>
-</ol>
-<br>
-<h1>UnOrdered Lists</h1> 
-<ul>
-<li>Madhu</li>
-<li>Kalpana</li>
-<li>Venkatanarayana</li>
-<li> Rangamma</li>
-</ul>
-<table>
-    <tr>
-    <th>Company</th>
-    <th>Contact </th> 
-    <th>Country</th> 
-    </tr>
-    <tr> 
-    <td> Apple</td> 
-    <td>Dinesh Reddy</td>
-    <td>USA</td> 
-    </tr>
-    <tr> 
-        <td>Google</td>
-        <td>Madhu</td> 
-        <td>Canada</td>
-    </tr>    
-</table>
+<h2> The method Attributes </h2>
+
+<h1> The form will be submitted through the Get method </h1>
+<form action="https://tirupatibalaji.ap.gov.in/#/login" method="POST">
+    <fieldset>
+        <legend>FORM POST</legend>
+    <label for="fname"> First Name</label> 
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname"> Last Name</label>
+    <input type="text" id="lname" name="lname" required><br>
+      <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="3" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab" selected>Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select> <br>
+  <textarea name="message" rows="10" cols="30"> I am learning SAP UI5</textarea><br>
+    <input type="submit" value="submit" formtarget="_blank">
+    </fieldset>
+</form> 
+ </body>
 </html>
