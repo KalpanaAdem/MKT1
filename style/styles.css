@@ -1,0 +1,45 @@
+.box{ 
+width: 150px;
+border: 1px solid black;
+float: left;
+margin: 3px;
+}
+.box-title{
+    color: red;
+    text-align: center;
+}
+.box-content{
+    background: yellow;
+    color: blue;
+    height: 150px;
+    border: 1px solid black;
+    padding: 4px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+}
+img:HOVER{
+opacity: 1;
+border: 3px solid red;
+height: 200px;
+width: 200px;
+}
+.myImg{
+    float: left;
+    margin: 10px;
+}
+#courses li{
+    float: left;
+    padding: 5px;
+    border: 1px solid black;
+    list-style: none;
+    background: white;
+    color: blue;
+}
+#courses li:HOVER{
+    background: orange;
+    color: red;
+    text-transform: uppercase;
+}

@@ -5,48 +5,52 @@
     <meta name="keywords" content="UI5 Practice sessions">
     <meta name="descrition" content="This is First learnings for SAP UI5">
     <title> Kalpana UI5 Practice</title> 
-    <style> 
-    h1{
-        color: red;
-    }
-    h2 {
-        color: green;
-    }
-    </style> 
-</head>
+    <link href="style/styles.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+<div class="box">
+<div class="box-title">
+    <h3>What is HTML</h3> 
+</div>
+<div class="box-content">
+    <p>HTML Stands for Hyper Text Markup Language. It is used to Crete Static Web content.</p>
+</div>
+</div>
+<div class="box">
+<div class="box-title">
+    <h3>What is CSS</h3> 
+</div>
+<div class="box-content">
+    <p>CSS Stands for Cascading Stylesheet, it is used to format the HTML content.</p>
+</div>
+</div>
+<div class="box">
+<div class="box-title">
+    <h3>What is JS</h3> 
+</div>
+<div class="box-content">
+    <p>Java Script is Browser Programming Language.</p>
+</div>
+</div>
+<div style="clear: left;"></div>
+<br>
+<div class="myImg">
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__480.jpg" >
+    <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg">
+    <img src="https://i.pinimg.com/originals/a7/3d/6e/a73d6e4ac85c6a822841e449b24c78e1.jpg">
+</div>
+<div style="clear: left;"></div>
+<ul id="courses">
+    <li> <a href="https://www.w3schools.com/"> HTML5 </a></li>
+    <li><a href="https://blogs.sap.com/2015/10/25/abap-740-quick-reference/"> SAP ABAP740 Quick Reference</a></li> 
+</ul>
 
-<body>
-     <h1>welcome to UI5 Practice Session</h1>
-     <a href="https://tirupatibalaji.ap.gov.in/">TTD Online Booking</a> 
-     <br>
-     <a href="https://tirupatibalaji.ap.gov.in/"> 
-        <img src="Images/Balaji.jpg" width="100px" height="100px">
-    </a>
-    <br>
-    <br>
-        <button type="button" onclick="alert('Hellow World')">click me here!</button> 
-   
-  <br>
-<h2> The method Attributes </h2>
 
-<h1> The form will be submitted through the Get method </h1>
-<form action="https://tirupatibalaji.ap.gov.in/#/login" method="POST">
-    <fieldset>
-        <legend>FORM POST</legend>
-    <label for="fname"> First Name</label> 
-    <input type="text" id="fname" name="fname" required><br>
-    <label for="lname"> Last Name</label>
-    <input type="text" id="lname" name="lname" required><br>
-      <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars" size="3" multiple>
-    <option value="volvo">Volvo</option>
-    <option value="saab" selected>Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select> <br>
-  <textarea name="message" rows="10" cols="30"> I am learning SAP UI5</textarea><br>
-    <input type="submit" value="submit" formtarget="_blank">
-    </fieldset>
-</form> 
+
+
+
+
+
+
  </body>
-</html>
+ </html>
