@@ -1,0 +1,151 @@
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+h1::before {
+  content: url(MKT1/Images/Balaji.jpg);
+}
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+ul {
+  list-style-type: none;
+  margin: 15;
+  padding: 15;
+}
+
+li {
+  display: inline;
+}
+input[type=text] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type=button] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+#example1 {
+  background-image: url("https://i.pinimg.com/originals/9c/13/0f/9c130f4a650c7f7c799a898d101c474c.jpg");
+  background-size: 100px 100px;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+#example2 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: content-box;
+}
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, pink);
+}
+#grad2 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+#grad3 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, black);
+}
+div.test1 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.test1:hover {
+  overflow: visible;
+}
+p.test {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+ /*transform: scale(2,3);*/
+}
+div#myDiv {
+/*  transform: rotate(20deg);*/
+ transform: skew(20deg,10deg);
+}
+div#myDiv2 {
+  transform: matrix(2, 0, 0.5, 1, 150, 0);
+}
+#divmyDiv1 {
+  transform: rotateZ(120deg);
+}
+.ka1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+.mcn {
+  column-count: 3;
+}

@@ -1,20 +1,54 @@
 <html>
-    <head>
 
-        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-                data-sap-ui-libs="sap.m">
-        </script>
-        <script>
-            var oBtn = new sap.m.Button({
-                text: "welcome",
-		press: function() {
-			alert("This is your first UI5 app")
-		}
-            });
-            oBtn.placeAt("content");
-        </script>
-    </head>
-    <body>
-        <div id="content"></div>
-    </body>
+<head>
+
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" data-sap-ui-libs="sap.m,sap.ui.layout">
+    </script>
+    <script>
+        var oBtn = new sap.m.Button({
+            text: "welcome",
+            press: function () {
+                alert("This is your first UI5 app")
+            }
+        });
+        oBtn.placeAt("content");
+        var oPhoto = new sap.m.Image({
+            width: "5%",
+            src: "http://services.odata.org/V4/(S(lelatahvudjfc2ujw0o35gpv))/TripPinServiceRW/Photos(1)/$value"
+        });
+        oPhoto.placeAt("content");
+        var oForm = new sap.ui.layout({
+            title: "User Details", content: [
+
+                new sap.m.Lable({
+                    text: "User Name"
+                }),
+                new sap.m.Input("idUser", {
+                    type: sap.m.InputType.Text,
+                    placeholder: "Enter a Name..."
+                }),
+                new sap.m.Lable({
+                    text: "PassWord"
+                }),
+                new sap.m.Input("pwdUser", {
+                    type: sap.m.InputType.Password,
+                    placeholder: "Password"
+                }),
+          new sap.m.Button({
+            text: "welcome",
+            press: function () {
+                alert("This is Form with Lables and input Fields")
+            }
+        }),
+            ]
+
+        });
+        oForm.placeAt("content");
+    </script>
+</head>
+
+<body>
+    <div id="content"></div>
+</body>
+
 </html>
